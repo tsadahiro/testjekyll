@@ -1,0 +1,13 @@
+---
+layout: default
+title: 第2回
+---
+
+# ファイルの属性
+
+## ls -l
+
+<code>ls -l</code>の出力する情報をもう少し詳しく
+みます。
+
+![ls-l](/images/lsl.png)
