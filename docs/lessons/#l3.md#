@@ -1,0 +1,40 @@
+---
+layout: default
+title: 第3回
+---
+
+# シェルスクリプト
+
+シェルをプログラミング言語のように
+用いる構文があり、コマンドを組み合わせて
+より複雑な処理を行うことが出来ます。
+
+## シェルの指定
+
+<code>#!シェルパス</code>
+と冒頭に記すことでシェルスクリプトを
+処理するシェルを指定出来ます。
+
+次のようなファイルを<code>hello.sh</code>という
+名前で保存します。
+{% highlight zsh  %}
+#!/bin/zsh
+
+echo "Hello"
+ls
+{% endhighlight %}
+
+これを実行するにはコマンドラインから<code>zsh</code>
+の引数として渡します。
+<pre>
+sadahiro@taizoair scripts % zsh hello.sh 
+Hello
+echo.sh		mail.txt	rep.rb		test.sh
+hello.sh	new.csv		rep.tex		test.txt
+long.pdf	newfolder	test.csv	timer.sh
+</pre>
+
+しかし、<code>chmod +x</code>コマンドで
+実行可能とすることにより、普通のコマンドと
+同じように<code>./hello.sh</code>として実行出来ます。
+
